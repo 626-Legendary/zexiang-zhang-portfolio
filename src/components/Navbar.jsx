@@ -29,7 +29,7 @@ const Navbar = () => {
     <nav
       className={`${
         styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
+      } w-full flex items-center py-8 fixed top-0 z-20 ${
         scrolled ? "bg-primary" : "bg-transparent"
       }`}
     >
@@ -43,7 +43,7 @@ const Navbar = () => {
           }}
         >
           
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
+          <p className='text-white text-[20px] font-bold cursor-pointer flex '>
             PORTFOLIO. &nbsp;
             
           </p>
