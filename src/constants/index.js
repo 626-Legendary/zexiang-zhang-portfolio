@@ -247,7 +247,7 @@ const projects = [
     tags: [
       { name: "React", color: "text-blue-500" },
       { name: "TypeScript", color: "text-green-500" },
-      { name: "Redux", color: "text-orange-500" },
+      { name: "Shopify", color: "text-orange-500" },
       { name: "SaaS", color: "text-pink-500" },
     ],
     image: bolideweb,
@@ -314,7 +314,7 @@ const projects = [
     tags: [
       { name: "Python", color: "text-yellow-500" },
       { name: "Tkinter", color: "text-emerald-500" },
-      { name: "CSS", color: "text-pink-500" },
+      { name: "OOP", color: "text-pink-500" },
     ],
     image: pizzaorder,
     source_code_link: "https://github.com/",
