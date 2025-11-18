@@ -15,6 +15,18 @@ import {
   taskmanager,
   pizzaorder,
   boombet,
+  fairstart,
+
+  fastapi,
+  insomnia,
+  postgresql,
+  langchain,
+  langgraph,
+  langsmith,
+  pydanticai,
+  raspberryPi,
+  ubuntu,
+  vercel,
 
   aws,
   azure,
@@ -52,6 +64,7 @@ import {
   zustand,
   ucarla,
   bolide,
+
 
 } from "../assets";
 
@@ -123,48 +136,61 @@ const technologies = [
 ];
 
 const technologiesOther = [
-  // 前端基础
+  // 🧠 语言 & 类型系统
+  { name: "Typescript", icon: typescript },
+
+  // 🎨 前端基础 & UI 样式
   { name: "HTML", icon: html },
   { name: "CSS", icon: css },
   { name: "Bootstrap", icon: bootstrap },
   { name: "Tailwind CSS", icon: tailwind },
   { name: "jQuery", icon: jQuery },
 
-  // 语言 & 补充
-  { name: "Typescript", icon: typescript },
-
-  // 前端框架/状态管理
+  // ⚛️ 前端框架 & 状态管理 & 3D
   { name: "Next.js", icon: nextjs },
   { name: "Redux", icon: redux },
   { name: "Zustand", icon: zustand },
   { name: "Three.js", icon: threejs },
 
-  // 后端 & 全栈框架
+  // 🧱 后端 & API 框架
   { name: "Flask", icon: flask },
   { name: "Django", icon: django },
+  { name: "FastAPI", icon: fastapi },
+
+  // 🗄️ 数据库 & ORM
   { name: "Prisma", icon: prisma },
-
-  // 数据库
   { name: "MongoDB", icon: mongodb },
+  { name: "PostgreSQL", icon: postgresql },
 
-  // DevOps & 云服务
+  // 🤖 AI / LLM 工作流 & 工具
+  { name: "LangChain", icon: langchain },
+  { name: "LangGraph", icon: langgraph },
+  { name: "LangSmith", icon: langsmith },
+  { name: "PydanticAI", icon: pydanticai },
+
+  // ☁️ 云服务 & DevOps & 部署
   { name: "AWS", icon: aws },
   { name: "Azure", icon: azure },
   { name: "Kubernetes", icon: kubernetes },
-  { name: "Postman", icon: postman },
-  { name: "Jira", icon: jira },
-  { name: "Jupyter Notebook", icon: jupyter },
+  { name: "Vercel", icon: vercel },
+  { name: "Raspberry Pi", icon: raspberryPi },
+  { name: "Ubuntu", icon: ubuntu },
 
-  // 设计 & 原型
+  // 🧪 开发者工具 & 调试
+  { name: "Postman", icon: postman },
+  { name: "Insomnia", icon: insomnia },
+  { name: "Jupyter Notebook", icon: jupyter },
+  { name: "Jira", icon: jira },
+
+  // 🎨 设计 & 多媒体
   { name: "Figma", icon: figma },
   { name: "Photoshop", icon: photoshop },
   { name: "Premiere", icon: premiere },
 
-  // CMS & 电商建站
+  // 🛒 CMS & 电商建站
   { name: "WordPress", icon: wordpress },
   { name: "Wix", icon: wix },
   { name: "Shopify", icon: shopifyTech },
-
 ];
 
 
@@ -189,10 +215,23 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Aug 2023 – Present",
     points: [
-      "Built JWT-authenticated Node.js/Express APIs and integrated RTSP streaming; assisted AWS deployment to support ~50,000 users with 99% uptime and ~700 ms latency.",
-      "Implemented React + Tailwind CSS UI with code-splitting and lazy loading, reducing page load times by ~20% and increasing positive user feedback by 15%.",
-      "Developed a real-time Task Manager (React/Node.js) with KPI dashboards, boosting team efficiency by ~15%; redesigned eBay, Amazon, and Walmart listings using Figma prototypes and SEO best practices, increasing conversion rates by ~25%."
+      "Used React, TypeScript, Tailwind CSS to rebuild CCTV web VMS, improved load speed ~45% and reduced rendering issues for enterprise users.",
+      "Used React, JavaScript, responsive UI patterns to redesign configuration flows, reduced camera setup time ~40%.",
+      "Used JWT auth and role-based access control to secure VMS portal, eliminated unauthorized access and passed penetration testing.",
+      "Used Python, Django, MySQL to design high-traffic APIs for device and user management, cut peak-load error rate from ~3% to <0.5%.",
+      "Used MySQL sharding and partitioning to scale data from millions to tens of billions of rows, kept P95 query latency <50 ms.",
+      "Used Bloom filter and 28 GB Redis bitmap on 10B-record blacklist to deliver <5 ms screening and cut false positives ~99%.",
+      "Used Redis caching and optimized indexing to speed frequent queries, reduced database load ~35% at peak.",
+      "Used Java to enhance VMS backend for multi-stream recording, motion tagging, and alerts, enabling operators to monitor ~30% more cameras.",
+      "Used message queues to build event-driven pipelines for camera alerts and logs, achieved 99.9% on-time delivery.",
+      "Used circuit breakers and retry policies for external integrations, cut downtime ~40% and improved SLA stability.",
+      "Used Docker and Docker Compose to containerize frontend, backend, and workers, reduced deployment time from hours to minutes.",
+      "Used Docker-based CI/CD pipelines to unify test and prod environments, reduced environment-related bugs ~70%.",
+      "Used structured logging and metrics for Django, Java, Redis, MySQL, cut MTTR ~50%.",
+      "Used React, Tailwind, REST APIs to build monitoring dashboards for device status and alerts, reduced manual log checks ~80%.",
+      "Used SEO improvements, metadata optimization, and performance tuning to increase organic traffic ~60% and inbound trials ~25%."
     ],
+
   },
 
 ];
@@ -227,9 +266,23 @@ const testimonials = [
 
 const projects = [
   {
+    name: "FairStart - AI Resume",
+    description:
+      "AI-driven resume optimization platform that transforms raw experience into polished, ATS-ready resumes with real-time feedback and export-ready outputs.",
+    tags: [
+      { name: "React", color: "text-blue-500" },
+      { name: "Python", color: "text-green-500" },
+      { name: "FastAPI", color: "text-pink-500" },
+      { name: "AWS", color: "text-orange-500" },
+      { name: "LangChain", color: "text-purple-500" },
+    ],
+    image: fairstart,
+    source_code_link: "https://ai-resume-one-alpha.vercel.app/",
+  },
+  {
     name: "Online Sports Betting Platform",
     description:
-      "Migrated a legacy Blazor application to React, significantly improving performance, load times, and maintainability. Focused on optimizing the user experience for betting workflows across multiple devices, ensuring smooth and intuitive interactions for users.",
+      "Migrated a large-scale Blazor system to React, improving performance, responsiveness, and maintainability. Delivered an optimized multi-device betting experience with streamlined UX and faster load times.",
     tags: [
       { name: "React", color: "text-blue-500" },
       { name: "TypeScript", color: "text-green-500" },
@@ -243,7 +296,7 @@ const projects = [
   {
     name: "Bolide Website",
     description:
-      "Official corporate website for Bolide Technology Group, showcasing company services, products, and solutions while providing an intuitive user experience and seamless navigation.",
+      "Corporate website for Bolide Technology Group, presenting products and security solutions with a clean, modern interface and optimized navigation.",
     tags: [
       { name: "React", color: "text-blue-500" },
       { name: "TypeScript", color: "text-green-500" },
@@ -256,7 +309,7 @@ const projects = [
   {
     name: "CCTV Website",
     description:
-      "A professional e-commerce website for a CCTV company, allowing users to browse and purchase security products online, view detailed specifications, and access customer support with a smooth and intuitive shopping experience.",
+      "E-commerce platform for a CCTV brand, featuring product listings, technical specs, customer support, and a streamlined shopping flow.",
     tags: [
       { name: "HTML", color: "text-blue-500" },
       { name: "CSS", color: "text-green-500" },
@@ -268,7 +321,7 @@ const projects = [
   {
     name: "Antenna Website",
     description:
-      "An official website for a leading US TV antenna brand, serving millions of households nationwide with annual sales in the tens of millions USD. The website showcases product features, installation videos, and guides, while directing users to purchase through Amazon, Walmart, and eBay for convenient online shopping.",
+      "Official website for a leading U.S. antenna brand serving millions of households. Features product showcases, installation guides, tutorial videos, and direct links to Amazon, Walmart, and eBay for seamless purchasing.",
     tags: [
       { name: "WordPress", color: "text-blue-500" },
       { name: "JavaScript", color: "text-green-500" },
@@ -280,7 +333,7 @@ const projects = [
   {
     name: "UCAR LA Website",
     description:
-      "Official website for UCAR LA Auto Group, enabling users to sell their cars online with instant valuations powered by Manheim data, offering more competitive pricing than CarMax. The site also displays dealership inventory, allowing users to browse vehicles and schedule appointments directly for purchase or test drives.",
+      "Vehicle buying-and-selling platform integrated with Manheim data for real-time valuations. Users can obtain instant pricing, browse dealership inventory, and schedule appointments directly online.",
     tags: [
       { name: "JavaScript", color: "text-blue-500" },
       { name: "Flask", color: "text-green-500" },
@@ -294,7 +347,7 @@ const projects = [
   {
     name: "Task Manager",
     description:
-      "A web-based task management application that allows users to create, update, and track tasks efficiently, helping individuals and teams stay organized and improve productivity.",
+      "Full-stack task management application with authentication, real-time updates, and cloud deployment. Built to improve productivity for individuals and teams.",
     tags: [
       { name: "React", color: "text-blue-500" },
       { name: "Express", color: "text-green-500" },
@@ -310,7 +363,7 @@ const projects = [
   {
     name: "Pizza Order Application",
     description:
-      "Interactive pizza ordering system built with Python and Tkinter, enabling users to select pizza size, crust, toppings, calculate total cost with tax, and generate receipts with animated menu visuals.",
+      "Desktop pizza ordering system built with Python and Tkinter, featuring customizable orders, automated cost calculation, receipt generation, and animated menu elements.",
     tags: [
       { name: "Python", color: "text-yellow-500" },
       { name: "Tkinter", color: "text-emerald-500" },
@@ -320,6 +373,7 @@ const projects = [
     source_code_link: "https://github.com/",
   },
 ];
+
 
 
 export { services, technologies, technologiesOther, experiences, testimonials, projects };

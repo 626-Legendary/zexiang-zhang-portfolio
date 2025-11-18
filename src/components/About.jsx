@@ -45,11 +45,15 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-justify'
       >
-        Hi! I’m Zexiang (Trevor) Zhang, a full-stack developer based in California. 
-        I build interactive web applications with clean UI and solid backend architecture using React, Python, and Java. 
-        I’m passionate about creating scalable, user-friendly, and visually engaging digital experiences.
+        <p>A versatile full-stack developer and current Computer Science graduate student at Georgia Institute of Technology, with five years of hands-on experience building scalable, high-performance, and user-friendly web applications. Proficient in designing and implementing both front-end and back-end solutions, with expertise in Python, Java, and JavaScript, across tightly integrated and decoupled architectures.</p>
+        <br />
+        <p>On the front end, delivers responsive and intuitive interfaces using modern frameworks such as React, Vue, and Angular. On the back end, develops robust APIs with Python and Java, working seamlessly with SQL and NoSQL databases. Holds Oracle Certified MySQL 8.0 Database Administrator credentials, with strong skills in relational database design, performance optimization, and high-availability replication.</p>
+        <br />
+        <p>Experienced in managing cloud and server infrastructure, including deploying applications on Linux (Ubuntu), configuring NGINX, and orchestrating environments through AWS (EC2, Lambda, Amplify) or on-premises systems.</p>
+        <br />
+        <p>Dedicated to continuous learning and improving code quality, performance, and user experience. Highly effective working independently or within agile teams, with a focus on delivering maintainable solutions that drive measurable business impact.</p>
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

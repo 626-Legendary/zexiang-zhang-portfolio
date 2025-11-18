@@ -120,6 +120,17 @@ const Contact = () => {
           >
             {loading ? "Sending..." : "🚀 Send"}
           </button>
+
+          <div>
+            <a href="https://www.linkedin.com/in/zexiang-zhang-9842b6160/" target="_blank">LinkedIn</a>
+            <br />
+            <br />
+            <a href="zhangzexiang626@gmail.com">Email: zhangzexiang626@gmail.com</a>
+            <br />
+            <br />
+            <a href="tel:+19096005268">Tel: +1 (909) 600-5268</a>
+          </div>
+
         </form>
       </motion.div>
 

@@ -1,25 +1,34 @@
-// 根目录图片
+/* ================================
+   Root-level images
+================================ */
 import logo from "./logo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
+
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
+/* ===== Project Thumbnails ===== */
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
-import bolideweb from "./bolideweb.png"; // 新增的图片
-import ucarlaweb from "./ucarlaweb.png"; // 新增的图片
-import fivestarantennaweb from "./fivestarantenna.png"; // 新增的图片
-import fivestarcctvweb from "./fivestarcctv.png"
-import taskmanager from "./taskmanager.png"; // 新增的图片
-import pizzaorder from "./pizzaorder.png"; // 新增的图片
-import boombet from "./boombet.png"; // 新增的图片
-// tech 文件夹
-import aws from "./tech/aws.svg";
+
+import bolideweb from "./bolideweb.png";
+import ucarlaweb from "./ucarlaweb.png";
+import fivestarantennaweb from "./fivestarantenna.png";
+import fivestarcctvweb from "./fivestarcctv.png";
+import taskmanager from "./taskmanager.png";
+import pizzaorder from "./pizzaorder.png";
+import boombet from "./boombet.png";
+import fairstart from "./fairstart.png";
+
+/* ================================
+   Tech Stack Icons
+================================ */
+import aws from "./tech/aws.png";
 import azure from "./tech/azure.svg";
 import bootstrap from "./tech/bootstrap.png";
 import css from "./tech/css.svg";
@@ -45,23 +54,41 @@ import prisma from "./tech/prisma.png";
 import python from "./tech/python.svg";
 import react from "./tech/react.svg";
 import redux from "./tech/redux.png";
-import shopifyTech from "./tech/shopify.png"; // 避免和 company/shopify 重名
+import shopifyTech from "./tech/shopify.png";
 import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
 import typescript from "./tech/typescript.svg";
 import wix from "./tech/wix.png";
 import wordpress from "./tech/wordpress.svg";
 import zustand from "./tech/zustand.svg";
+import fastapi from "./tech/fastapi.svg";
+import insomnia from "./tech/insomnia.svg";
+import postgresql from "./tech/postgresql.svg";
 
-// company 文件夹
+import langchain from "./tech/langchain.png";
+import langgraph from "./tech/langgraph.png";
+import langsmith from "./tech/langsmith.png";
+import pydanticai from "./tech/pydanticai.svg";
+
+import raspberryPi from "./tech/raspberry-pi.svg";
+import ubuntu from "./tech/ubuntu.png";
+import vercel from "./tech/vercel.svg";
+
+/* ================================
+   Company Logos
+================================ */
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
-import ucarla from "./company/ucar la.png";
+import ucarla from "./company/ucarla.png";  // FIXED NAME
 import bolide from "./company/bolide.png";
-// 导出所有图片
+
+/* ================================
+   Export
+================================ */
 export {
+  // root assets
   logo,
   backend,
   creator,
@@ -70,9 +97,21 @@ export {
   github,
   menu,
   close,
+
+  // projects
   carrent,
   jobit,
   tripguide,
+  bolideweb,
+  ucarlaweb,
+  fivestarantennaweb,
+  fivestarcctvweb,
+  taskmanager,
+  pizzaorder,
+  boombet,
+  fairstart,
+
+  // tech
   aws,
   azure,
   bootstrap,
@@ -106,19 +145,22 @@ export {
   wix,
   wordpress,
   zustand,
+  fastapi,
+  insomnia,
+  postgresql,
+  langchain,
+  langgraph,
+  langsmith,
+  pydanticai,
+  raspberryPi,
+  ubuntu,
+  vercel,
+
+  // companies
   meta,
   shopify,
   starbucks,
   tesla,
-
-
   ucarla,
   bolide,
-  ucarlaweb,
-  bolideweb,
-  fivestarantennaweb,
-  fivestarcctvweb,
-  taskmanager,
-  pizzaorder,
-  boombet,
 };
