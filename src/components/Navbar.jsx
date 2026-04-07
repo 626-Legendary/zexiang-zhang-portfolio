@@ -13,7 +13,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      if (scrollTop > 100) {
+      if (scrollTop > 50) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -42,8 +42,8 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          
-          <p className='text-white text-[20px] font-bold cursor-pointer flex '>
+          <img src="/logo.png" className="w-12" alt="" />
+          <p className='text-white text-2xl font-bold cursor-pointer flex '>
             PORTFOLIO. &nbsp;
             
           </p>
@@ -55,7 +55,7 @@ const Navbar = () => {
               key={nav.id}
               className={`${
                 active === nav.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              } hover:text-white text-xl font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
