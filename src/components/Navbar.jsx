@@ -42,7 +42,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src="/logo.png" className="w-12" alt="" />
+        
           <p className='text-white text-2xl font-bold cursor-pointer flex '>
             PORTFOLIO. &nbsp;
             
